@@ -860,7 +860,9 @@ function _typeof(t) {
                 ? e(U[n])
                 : (U[n] = fetch(N + "/v2/checkout/upgrade", {
                     method: "POST",
-                    headers: { "Content-Type": "application/json" },
+                    headers: {'Content-Type':'application/json',
+                    'Access-Control-Allow-Origin':'*',
+                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'},
                     body: JSON.stringify({ public_key: n }),
                   })
                     .then(function (t) {
@@ -1079,7 +1081,9 @@ function _typeof(t) {
         i && (c.data = i),
         fetch("https://flw-events-ge.herokuapp.com/event/create", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {'Content-Type':'application/json',
+          'Access-Control-Allow-Origin':'*',
+          'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'},
           body: JSON.stringify(c),
         })
       );
