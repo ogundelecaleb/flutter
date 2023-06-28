@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 function _toArray(t) {
   return _arrayWithHoles(t) || _iterableToArray(t) || _nonIterableRest();
 }
